@@ -1,0 +1,18 @@
+
+class Trades(db.Model):
+	id = db.Column(db.Integer,primary_key=True)
+	price = db.Column(db.Float)
+	volume = db.Column(db.Float)
+	ask_id = db.Column(db.Integer)
+	bid_id = db.Column(db.Integer)
+	trend = db.Column(db.Integer)
+	currency = db.Column(db.Integer)
+	created_at = db.Column(db.DateTime)
+	updated_at = db.Column(db.DateTime)
+	ask_member_id = db.Column(db.Integer)
+	bid_member_id = db.Column(db.Integer)
+	funds = db.Column(db.Float)
+	lock_version = db.Column(db.Integer)
+	status = db.Column(db.Integer)
+	ask_order_fee = db.Column(db.Float)
+    bid_order_fee = db.Column(db.Float)
