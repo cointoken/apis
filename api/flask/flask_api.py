@@ -14,7 +14,7 @@ import re
 # locust
 app = Flask(__name__)
 # app.config['JWT_SECRET_KEY'] = 'Hex38109o'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:admin@localhost/exchange'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:admin@localhost/test_exchange'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] =  False
 # jwt = JWTManager(app)
 db = SQLAlchemy(app)
